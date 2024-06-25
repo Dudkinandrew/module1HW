@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
     <meta charset="UTF-8">
     <title>module 1</title>
@@ -9,16 +9,17 @@
     <link href="https://fonts.googleapis.com/css2?family=Manrope&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/reset.css">
     <link rel="stylesheet" href="styles/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 <body>
    <div class="container">
         <main>
-            <section class="picture" style="background-image: url(../resources/foto1.jpg);">
+            <section class="picture">
                 <div class="nav-section">
                     <div class="nav-container">
                         <div class="logo-link__box">
                             <a class="logo-link" href="/">
-                                <img class="logo" src="resources/ORLOV.png" alt="Логотип Орлов">
+                                <img src="resources/ORLOV.png" alt="Логотип Орлов">
                             </a>
                         </div>
                         <div class="nav">
@@ -30,60 +31,84 @@
                     </div>
                 </div>
                 <p class="picture__text1">Разрабатываю имиджевые сайты для <br /> малого и среднего бизнеса, которые <br /> повышают престиж компании и позволяют <br /> выделиться на фоне конкурентов</p>
-                <p class="picture__text2">Привет, я Саша —<br /> фронтенд разработчик<br /> и дизайнер сайтов</p>
+                <p class="picture__text2">Привет, я Саша — фронтенд разработчик и дизайнер сайтов</p>
             </section>
-            <section>
+            <section class="sectionn">
                 <h1 id="projects" class="project_header">
                     Самые свежие проекты
                 </h1>
                 <div class="project">
-                    <img src="resources/project_metric.png" alt="project1">
+                    <picture>
+                        <source media="(max-width: 500px)" srcset="resources/project_metric_mobule.png">
+                        <source media="(max-width: 1199px)" srcset="resources/project_metric_table.png">
+                        <img class="project__foto" src="resources/project_metric.png" alt="project1">
+                    </picture>
                     <h2 class="project__h2">Метрика</h2>
                     <h3 class="project__h3">верстка, настройка</h3>
                     <div class="project__logo">дизайн интерьера</div>
                 </div>
                 <div class="project">
-                    <img src="resources/project_nothing.png" alt="project1">
+                    <picture>
+                        <source media="(max-width: 500px)" srcset="resources/project_nothing_mobule.png">
+                        <source media="(max-width: 1199px)" srcset="resources/project_nothing_table.png">
+                        <img class="project__foto" src="resources/project_nothing.png" alt="project1">
+                    </picture>
                     <h2 class="project__h2">Nothing</h2>
                     <h3 class="project__h3">верстка, настройка</h3>
                     <div class="project__logo">презентация продукта</div>
                 </div>
                 <div class="project">
-                    <img src="resources/project_tortrip.png" alt="project1">
+                    <picture>
+                        <source media="(max-width: 500px)" srcset="resources/project_tortrip_mobule.png">
+                        <source media="(max-width: 1199px)" srcset="resources/project_tortrip_table.png">
+                        <img class="project__foto" src="resources/project_tortrip.png" alt="project1">
+                    </picture>
                     <h2 class="project__h2">TOPTRIP</h2>
                     <h3 class="project__h3">верстка</h3>
                     <div class="project__logo">заказ путешествий</div>
                 </div>
                 <button class="projects__btn">Смотреть все проекты</button>
             </section>
-            <section>
-                <h1 id="skills" class="project_header">
+            <section class="sectionn">
+                <h1 id="skills" class="project_header project_mob">
                     Мои компетенции
                 </h1>
                 <div class="skills">
                     <div class="skills__box">
-                        <img class="skills__logo" src="resources/ph_file-html-thin.png" alt="HTML logo">
+                        <picture>
+                            <source media="(max-width: 1199px)" srcset="resources/ph_file-html-thin_tab.png">
+                            <img class="skills__logo" src="resources/ph_file-html-thin.png" alt="HTML logo">
+                        </picture>
                         <div class="skills__head"><h2>HTML и CSS</h2></div>
                         <div class="skills__text">
                             <p >это основа фронтенд разработки. Умение создавать и правильно структурировать HTML-документы, а также применять стили к этим документам на CSS, является обязательным навыком для каждого фронтенд разработчика.</p>
                         </div>
                     </div>
                     <div class="skills__box">
-                        <img class="skills__logo" src="resources/ph_file-html-thin (1).png" alt="JS logo">
+                        <picture>
+                            <source media="(max-width: 1199px)" srcset="resources/ph_file-html-thin_tab_2.png">
+                            <img class="skills__logo" src="resources/ph_file-html-thin (1).png" alt="JS logo">
+                        </picture>
                         <div class="skills__head"><h2>JavaScript</h2></div>
                         <div class="skills__text">
                             <p> это язык программирования, который используется для создания динамического и интерактивного пользовательского интерфейса. Хороший фронтенд разработчик должен быть знаком с основами JavaScript, включая работу с DOM-деревом, асинхронными запросами и манипуляцией данными на стороне клиента.</p>
                         </div>
                     </div>
                     <div class="skills__box">
-                        <img class="skills__logo" src="resources/ph_file-html-thin (2).png" alt="FW logo">
+                        <picture>
+                            <source media="(max-width: 1199px)" srcset="resources/ph_file-html-thin_tab_3.png">
+                            <img class="skills__logo" src="resources/ph_file-html-thin (2).png" alt="FW logo">
+                        </picture>
                         <div class="skills__head skills__head__br"><h2>Работа с библиотеками и фреймворками</h2></div>
                         <div class="skills__text">
-                            <p >фронтенд разработчики должны быть знакомы с различными библиотеками и фреймворками, такими как React, Angular, Vue и другими. Умение использовать готовые решения, адаптировать ихпод нужды проекта и расширять их функциональность, является очень важным навыком.</p>
+                            <p >фронтенд разработчики должны быть знакомы с различными библиотеками и фреймворками, такими как React, Angular, Vue и другими. Умение использовать готовые решения, адаптировать их под нужды проекта и расширять их функциональность, является очень важным навыком.</p>
                         </div>
                     </div>
                     <div class="skills__box">
-                        <img class="skills__logo" src="resources/ph_file-html-thin (3).png" alt="Mobile logo">
+                        <picture>
+                            <source media="(max-width: 1199px)" srcset="resources/ph_file-html-thin_tab_3.png">
+                            <img class="skills__logo" src="resources/ph_file-html-thin (3).png" alt="Mobile logo">
+                        </picture> 
                         <div class="skills__head"><h2>Разработка для мобильных<br /> устройств и адаптивная версткаи</h2></div>
                         <div class="skills__text">
                             <p >фронтенд разработчики должны быть знакомы с различными библиотеками и фреймворками, такими как React, Angular, Vue и другими. Умение использовать готовые решения, адаптировать их под нужды проекта и расширять их функциональность, является очень важным навыком.</p>
@@ -91,33 +116,52 @@
                     </div> 
                 </div>
             </section>
-            <section>
+            <section class="sectionn">
                 <h2 id="skills2" class="header_h2">
                     Помогаю реализовать<br> широкий спектр задач
                 </h2 >
                 <div class="boxes">
-                    <img src="resources/Rectangle 15.png" alt="">
+                    <picture>
+                        <source media="(max-width: 500px)" srcset="resources/Rectangle_15_mob.png">
+                        <source media="(max-width: 1199px)" srcset="resources/Rectangle_15_tab.png">
+                        <img src="resources/Rectangle 15.png" alt="">
+                    </picture> 
                     <div class="box">
-                        <h2 class="box__header">Разработка <br>сайта под ключ</h2>
-                        <p class="box__text">Это создание дизайн веб-сайтов, созданный для удобства пользователя и решения бизнес-задач Сайты должны быть понятными и удобными, ведь чем понятнее сайт, тем быстрее пользователь совершит целевое действие</p>
+                        <h2 class="box__header">Разработка сайта под ключ</h2>
+                        <p class="box__text">Это создание дизайн веб-сайтов, созданный для удобства пользователя и решения бизнес-задач <br>Сайты должны быть понятными и удобными, ведь чем понятнее сайт, тем быстрее пользователь совершит целевое действие</p>
                     </div>
                 </div>
                 <div class="boxes">
-                    <img src="resources/Rectangle 18.png" alt="">
+                    <picture>
+                        <source media="(max-width: 500px)" srcset="resources/Rectangle_18_mob.png">
+                        <source media="(max-width: 1199px)" srcset="resources/Rectangle_18_tab.png">
+                        <img src="resources/Rectangle 18.png" alt="">
+                    </picture>
                     <div class="box">
                         <h2 class="box__header">Верстка сайтов</h2>
                         <p class="box__text">Это процесс создания HTML-документов и применения к ним стилей на CSS. Фронтенд разработчик может помочь создать привлекательный и удобный интерфейс для вашего сайта</p>
                     </div>
                 </div>
-                <div class="boxes" style="margin-top: 134px;">
-                    <img src="resources/Rectangle 20.png" alt="">
+                <div class="boxes">
+                    <picture>
+                        <source media="(max-width: 500px)" srcset="resources/Rectangle_20_mob.png">
+                        <source media="(max-width: 1199px)" srcset="resources/Rectangle_20_tab.png">
+                        <img src="resources/Rectangle 20.png" alt="">
+                    </picture>
                     <div class="box">
                         <h2 class="box__header">Разработка <br>мобильного интерфейса</h2>
                         <p class="box__text">Это процесс создания интерактивных элементов на странице с помощью JavaScript. Фронтенд разработчик может помочь создать динамический и удобный пользовательский интерфейс для вашего сайта или приложения.</p>
                     </div>
                 </div>
                 <div id="contants" class="logo">
-                    <img src="resources/Frame 25.png" alt="">
+
+                    <picture>
+                        <source media="(max-width: 500px)" srcset="resources/Frame_25_mob.png">
+                        <source media="(max-width: 1199px)" srcset="resources/Frame_25_table.png">
+                        <img src="resources/Frame 25.png" alt="">
+                    </picture>
+
+                    
                     <div class="feedback">
                         <div class="logo__head">
                             <p>Для связи со мной заполните простую форму</p>
@@ -129,8 +173,6 @@
                             placeholder="example@mail.com">
                         </div>
                         <button class="btn3">Отправить</button>
-
-
                     </div>
                 </div>
                 </section>
