@@ -28,9 +28,11 @@
                             <a href="#skills2" class="nav__link">услуги</a>
                             <a href="#contants" class="nav__link">контакты</a>
                         </div>
+                        <div class="burger-btn js-burger-btn">
+                        </div>
                     </div>
                 </div>
-                <p class="picture__text1">Разрабатываю имиджевые сайты для <br /> малого и среднего бизнеса, которые <br /> повышают престиж компании и позволяют <br /> выделиться на фоне конкурентов</p>
+                <p class="picture__text1">Разрабатываю имиджевые сайты для малого и среднего бизнеса, которые повышают престиж компании и позволяют выделиться на фоне конкурентов</p>
                 <p class="picture__text2">Привет, я Саша — фронтенд разработчик и дизайнер сайтов</p>
             </section>
             <section class="sectionn">
@@ -43,8 +45,8 @@
                         <source media="(max-width: 1199px)" srcset="resources/project_metric_table.png">
                         <img class="project__foto" src="resources/project_metric.png" alt="project1">
                     </picture>
-                    <h2 class="project__h2">Метрика</h2>
-                    <h3 class="project__h3">верстка, настройка</h3>
+                    <h2 class="project__h2 project__first">Метрика</h2>
+                    <h3 class="project__h3 project__first">дизайн,верстка, настройка</h3>
                     <div class="project__logo">дизайн интерьера</div>
                 </div>
                 <div class="project">
@@ -54,17 +56,17 @@
                         <img class="project__foto" src="resources/project_nothing.png" alt="project1">
                     </picture>
                     <h2 class="project__h2">Nothing</h2>
-                    <h3 class="project__h3">верстка, настройка</h3>
+                    <h3 class="project__h3">разработка интерфейса</h3>
                     <div class="project__logo">презентация продукта</div>
                 </div>
-                <div class="project">
+                <div class="project project_last">
                     <picture>
                         <source media="(max-width: 500px)" srcset="resources/project_tortrip_mobule.png">
                         <source media="(max-width: 1199px)" srcset="resources/project_tortrip_table.png">
                         <img class="project__foto" src="resources/project_tortrip.png" alt="project1">
                     </picture>
                     <h2 class="project__h2">TOPTRIP</h2>
-                    <h3 class="project__h3">верстка</h3>
+                    <h3 class="project__h3">разработка интерфейса</h3>
                     <div class="project__logo">заказ путешествий</div>
                 </div>
                 <button class="projects__btn">Смотреть все проекты</button>
@@ -109,7 +111,7 @@
                             <source media="(max-width: 1199px)" srcset="resources/ph_file-html-thin_tab_3.png">
                             <img class="skills__logo" src="resources/ph_file-html-thin (3).png" alt="Mobile logo">
                         </picture> 
-                        <div class="skills__head"><h2>Разработка для мобильных<br /> устройств и адаптивная версткаи</h2></div>
+                        <div class="skills__head"><h2>Разработка для мобильных устройств и адаптивная версткаи</h2></div>
                         <div class="skills__text">
                             <p >фронтенд разработчики должны быть знакомы с различными библиотеками и фреймворками, такими как React, Angular, Vue и другими. Умение использовать готовые решения, адаптировать их под нужды проекта и расширять их функциональность, является очень важным навыком.</p>
                         </div>
@@ -131,7 +133,7 @@
                         <p class="box__text">Это создание дизайн веб-сайтов, созданный для удобства пользователя и решения бизнес-задач <br>Сайты должны быть понятными и удобными, ведь чем понятнее сайт, тем быстрее пользователь совершит целевое действие</p>
                     </div>
                 </div>
-                <div class="boxes">
+                <div class="boxes boxes__midl">
                     <picture>
                         <source media="(max-width: 500px)" srcset="resources/Rectangle_18_mob.png">
                         <source media="(max-width: 1199px)" srcset="resources/Rectangle_18_tab.png">
@@ -154,14 +156,11 @@
                     </div>
                 </div>
                 <div id="contants" class="logo">
-
                     <picture>
                         <source media="(max-width: 500px)" srcset="resources/Frame_25_mob.png">
                         <source media="(max-width: 1199px)" srcset="resources/Frame_25_table.png">
                         <img src="resources/Frame 25.png" alt="">
                     </picture>
-
-                    
                     <div class="feedback">
                         <div class="logo__head">
                             <p>Для связи со мной заполните простую форму</p>
@@ -191,6 +190,33 @@
                 <p class="foot__text">политика обработки данных</p>
             </div> 
         </footer>
-   </div> 
+   </div>
+   <div class="burger js-burger ">
+    <div class="burger__content ">
+        <div class="burger-logo">
+            <img src="resources/logo-burger.png" alt="burger-logo">
+        </div>
+        <div class="burger-nav">
+            <a href="#projects" class="nav__link-burger">портфолио</a>
+            <a href="#skills" class="nav__link-burger">компетенции</a>
+            <a href="#skills2" class="nav__link-burger">услуги</a>
+            <a href="#contants" class="nav__link-burger">контакты</a>
+        </div>
+        <div class="burger-contacts js-burger__content ">
+            <p class="header-contacts">для связи:</p>
+            <div class="telegram-burger">
+                <a class="telelegram__2-burger" href="https://t.me/dudkinandrew91">telegram</a>
+            </div>
+            <div class="email-burger">
+                <a class="email__2-burger" href="mailto:esdron91@gmail.com">mail</a>
+            </div>
+            <div class="tel-burger">
+                <a class="tel__2-burger" href="tel:+7 917 729-45-93">+7 917 729-45-93</a>
+            </div>
+            
+        </div>
+    </div>
+</div>
+<script src="burger.js"></script> 
 </body>
 </html>
