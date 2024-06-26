@@ -492,6 +492,10 @@ a:hover {
         border-radius: 24.26px;
     }
 
+    .project__foto{
+        height: 445px;
+    }
+
     .project__h2{
         font-size: 28px;
         line-height: 36.4px;
@@ -679,6 +683,18 @@ a:hover {
         right: 21px;
         top: 11px;
       }
+
+    .boxes_img {
+        width: 100%;
+        background-size: contain;
+        height: 162px;
+    }
+
+    .img__contacts{
+        width: 100%;
+        background-size: contain;
+        height: 485px;
+    }
      
 }
 
@@ -719,6 +735,11 @@ a:hover {
         width: 268px;
         font-size: 30px;
         line-height: 39px;
+    }
+
+    .project__foto{
+        height: 445px;
+        background-size: contain;
     }
 
     .project_last {
@@ -887,6 +908,10 @@ a:hover {
         border-radius: 6.22px;
         margin-top: 40px;
       }
+
+      .boxes_img {
+        height: 225px;
+    }
     
     }
 
